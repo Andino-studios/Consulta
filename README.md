@@ -1,3 +1,5 @@
+#Higher Order Functions
+
 🌐 Proyecto: Integración Numérica con el Método de Simpson 1/3
 Programación Funcional • Funciones de Orden Superior • Scala
 

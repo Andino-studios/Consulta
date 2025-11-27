@@ -119,19 +119,9 @@ Organizar el proyecto siguiendo una estructura clara, modular y mantenible.
 
 Generar una documentación completa mediante este archivo README.
 
-📁 Estructura del Repositorio
-ProyectoSimpson/
-
-│
-├── src/
-│   ├── Simpson.sc        # Función de integración (Simpson 1/3)
-│   ├── Integrales.sc     # Evaluación de las integrales entregadas
-│   └── Error.sc          # Función para cálculo de error absoluto
-│
-└── README.md             # Documentación general del proyecto
-
 
 🧩 Desarrollo del Proyecto
+
 🔸 1. Función de Integración con Simpson 1/3
 
 Esta función recibe:
@@ -142,7 +132,8 @@ Un valor b (límite superior)
 
 Una función matemática f(x) enviada como parámetro
 
-// Implementación del método de Simpson 1/3 como función de orden superior
+Implementación del método de Simpson 1/3 como función de orden superior
+
 def simpson(a: Double, b: Double, f: Double => Double): Double = {
   val xm = (a + b) / 2.0
   (b - a) / 6.0 * (f(a) + 4 * f(xm) + f(b))

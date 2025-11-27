@@ -121,6 +121,7 @@ Generar una documentación completa mediante este archivo README.
 
 📁 Estructura del Repositorio
 ProyectoSimpson/
+
 │
 ├── src/
 │   ├── Simpson.sc        # Función de integración (Simpson 1/3)
@@ -128,6 +129,7 @@ ProyectoSimpson/
 │   └── Error.sc          # Función para cálculo de error absoluto
 │
 └── README.md             # Documentación general del proyecto
+
 
 🧩 Desarrollo del Proyecto
 🔸 1. Función de Integración con Simpson 1/3

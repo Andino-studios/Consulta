@@ -150,15 +150,16 @@ def error(esperado: Double, obtenido: Double): Double =
 // println(error(7.33, r1))
 
 📊 Valores de Referencia
-#	Integral	Valor Esperado
-1	∫₃⁵ (−x² + 8x − 12) dx	7.33
-2	∫₀² 3x² dx	8
-3	∫₋¹¹ (x + 2x² − x³ + 5x⁴) dx	3.333
-4	∫₁² (2x+1)/(x²+x) dx	1.09861
-5	∫₀¹ eˣ dx	1.71828
-6	∫₂³ 1/(x−1) dx	0.828427
-7	∫₀¹ 1/(1+x²) dx	0.785398
-📝 Observaciones Finales
+| # | Integral                     | Valor Esperado |
+| - | ---------------------------- | -------------- |
+| 1 | ∫₃⁵ (−x² + 8x − 12) dx       | 7.33           |
+| 2 | ∫₀² 3x² dx                   | 8              |
+| 3 | ∫₋¹¹ (x + 2x² − x³ + 5x⁴) dx | 3.333          |
+| 4 | ∫₁² (2x+1)/(x²+x) dx         | 1.09861        |
+| 5 | ∫₀¹ eˣ dx                    | 1.71828        |
+| 6 | ∫₂³ 1/(x−1) dx               | 0.828427       |
+| 7 | ∫₀¹ 1/(1+x²) dx              | 0.785398       |
+
 
 Este proyecto demuestra la combinación entre programación funcional y métodos numéricos, permitiendo reutilizar funciones y aplicar operaciones matemáticas de forma modular.
 Además, el cálculo del error facilita la comparación con valores reales para evaluar la precisión del método de Simpson.

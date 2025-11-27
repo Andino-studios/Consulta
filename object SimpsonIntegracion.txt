@@ -1,0 +1,37 @@
+object SimpsonIntegracion:
+
+  def integracion(a: Double, b: Double, f: Double => Double): Double =
+    val xm = (a + b) / 2
+    (b - a) * (f(a) + 4 * f(xm) + f(b)) / 6
+
+  def error(valorReal: Double, aproximado: Double): Double =
+    math.abs(valorReal - aproximado)
+
+  def main(args: Array[String]): Unit =
+    val i1 = integracion(3, 5, x => -x*x + 8*x - 12)
+    val e1 = error(7.33, i1)
+    println(s"Integral 1 ≈ $i1 | Error = $e1")
+
+    val i2 = integracion(0, 2, x => 3*x*x)
+    val e2 = error(8.0, i2)
+    println(s"Integral 2 ≈ $i2 | Error = $e2")
+
+    val i3 = integracion(-1, 1, x => x + 2*x*x - x*x*x + 5*x*x*x*x)
+    val e3 = error(3.333, i3)
+    println(s"Integral 3 ≈ $i3 | Error = $e3")
+
+    val i4 = integracion(1, 2, x => (2*x + 1) / (x*x + x))
+    val e4 = error(1.09861, i4)
+    println(s"Integral 4 ≈ $i4 | Error = $e4")
+
+    val i5 = integracion(0, 1, x => math.exp(x))
+    val e5 = error(1.71828, i5)
+    println(s"Integral 5 ≈ $i5 | Error = $e5")
+
+    val i6 = integracion(2, 3, x => 1 / (x - 1))
+    val e6 = error(0.828427, i6)
+    println(s"Integral 6 ≈ $i6 | Error = $e6")
+
+    val i7 = integracion(0, 1, x => 1 / (1 + x*x))
+    val e7 = error(0.785398, i7)
+    println(s"Integral 7 ≈ $i7 | Error = $e7")
